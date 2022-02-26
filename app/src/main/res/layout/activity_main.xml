@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D363E8A9"
+    android:backgroundTint="#D763E8A9"
     tools:context=".MainActivity">
 
     <Button
@@ -18,18 +20,20 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="301dp"
-        android:layout_height="64dp"
+        android:layout_width="343dp"
+        android:layout_height="165dp"
+        android:fontFamily="@font/chau_philomene_one"
         android:paddingHorizontal="30sp"
         android:paddingVertical="15sp"
         android:shadowColor="#731B1B"
         android:text="@string/your_current_emmissions"
-        android:textSize="20sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -42,4 +46,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.32" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="115dp"
+        android:layout_height="338dp"
+        app:srcCompat="@drawable/leaf"
+        tools:layout_editor_absoluteX="-13dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="115dp"
+        android:layout_height="338dp"
+        android:rotation="181"
+        android:rotationX="4"
+        app:srcCompat="@drawable/leaf"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="-117dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="115dp"
+        android:layout_height="338dp"
+        android:rotation="181"
+        android:rotationX="-199"
+        app:srcCompat="@drawable/leaf"
+        tools:layout_editor_absoluteX="332dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="115dp"
+        android:layout_height="338dp"
+        android:rotationX="-203"
+        android:rotationY="-4"
+        app:srcCompat="@drawable/leaf"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="-65dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
