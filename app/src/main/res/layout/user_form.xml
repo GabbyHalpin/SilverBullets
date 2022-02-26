@@ -32,7 +32,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Brand" />
+                android:fontFamily="@font/adamina"
+                android:text="Brand"
+                android:textSize="20sp" />
 
             <Spinner
                 android:id="@+id/spinner"
@@ -48,7 +50,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Model" />
+                android:text="Model"
+                android:textSize="20sp" />
 
             <Spinner
                 android:id="@+id/spinner2"
@@ -65,7 +68,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Year" />
+                android:text="Year"
+                android:textSize="20sp" />
 
             <Spinner
                 android:id="@+id/spinner3"
@@ -83,7 +87,8 @@
                 android:layout_gravity="center"
                 android:layout_margin="20sp"
                 android:text="@string/distance_unit"
-                android:textColor="#00695C" />
+                android:textColor="#00695C"
+                android:textSize="20sp" />
 
 
             <ToggleButton
@@ -108,7 +113,8 @@
                 android:layout_gravity="center"
                 android:layout_margin="20sp"
                 android:text="@string/distance_travelled"
-                android:textColor="#00695C" />
+                android:textColor="#00695C"
+                android:textSize="20sp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -118,6 +124,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20sp"
+                    android:background="@color/white"
                     android:hint="@string/enter_distance_here"
                     android:textColor="#616161"
                     android:textColorHighlight="#616161"
