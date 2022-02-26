@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D363E8A9"
+    android:background="#731B1B"
     android:backgroundTint="#D763E8A9"
     tools:context=".MainActivity">
 
@@ -12,6 +12,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#556B2F"
+        android:backgroundTint="#556B2F"
         android:text="@string/take_the_quiz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,41 +50,49 @@
         app:layout_constraintVertical_bias="0.32" />
 
     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="146dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="64dp"
+        android:rotationX="191"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leaf" />
+
+    <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="115dp"
-        android:layout_height="338dp"
-        app:srcCompat="@drawable/leaf"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="510dp" />
+        android:layout_width="146dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginBottom="4dp"
+        android:rotationX="191"
+        android:rotationY="190"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:srcCompat="@drawable/leaf" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="115dp"
-        android:layout_height="338dp"
-        android:rotation="181"
-        android:rotationX="4"
-        app:srcCompat="@drawable/leaf"
-        tools:layout_editor_absoluteX="312dp"
-        tools:layout_editor_absoluteY="-117dp" />
+        android:layout_width="146dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="68dp"
+        android:rotationX="17"
+        android:rotationY="190"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/leaf" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="115dp"
-        android:layout_height="338dp"
-        android:rotation="181"
-        android:rotationX="-199"
-        app:srcCompat="@drawable/leaf"
-        tools:layout_editor_absoluteX="332dp"
-        tools:layout_editor_absoluteY="309dp" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="115dp"
-        android:layout_height="338dp"
-        android:rotationX="-203"
-        android:rotationY="-4"
-        app:srcCompat="@drawable/leaf"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="-65dp" />
+        android:id="@+id/imageView2"
+        android:layout_width="146dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:srcCompat="@drawable/leaf" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

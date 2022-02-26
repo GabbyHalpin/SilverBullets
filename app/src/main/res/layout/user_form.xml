@@ -3,11 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:backgroundTint="#8BC34A">
 
     <ScrollView
         android:layout_width="409dp"
         android:layout_height="729dp"
+        android:background="#731B1B"
+        android:backgroundTint="#D763E8A9"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
@@ -21,66 +24,35 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="55dp" />
+                android:layout_height="45dp" />
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_margin="20sp"
                 android:text="Distance Unit" />
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
 
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal"
-                    android:id="@+id/linearLayout">
-
-                    <RadioButton
-                        android:id="@+id/radio_pirates"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:minWidth="100dp"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="@string/KM"
-                        android:textAlignment="center"
-                        tools:layout_conversion_absoluteHeight="48dp"
-                        tools:layout_conversion_absoluteWidth="100dp"
-                        tools:layout_editor_absoluteX="1dp"
-                        tools:layout_editor_absoluteY="75dp" />
-
-                </LinearLayout>
-
-                <RadioButton
-                    android:id="@+id/radio_ninjas"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:minWidth="100dp"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="@string/Miles"
-                    android:textAlignment="center"
-                    tools:layout_conversion_absoluteHeight="48dp"
-                    tools:layout_conversion_absoluteWidth="100dp"
-                    tools:layout_editor_absoluteX="101dp"
-                    tools:layout_editor_absoluteY="75dp" />
-
-            </RadioGroup>
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ToggleButton"
+                android:textOff="Km"
+                android:textOn="Miles" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="55dp" />
+                android:layout_height="45dp" />
 
             <TextView
                 android:id="@+id/textView7"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_margin="20sp"
                 android:text="Distance Travelled" />
 
@@ -91,17 +63,19 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
                     android:hint="Enter distance here" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="55dp" />
+                android:layout_height="45dp" />
 
             <TextView
                 android:id="@+id/textView9"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_margin="20sp"
                 android:text="Vehicle Model ID" />
 
@@ -112,18 +86,20 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
                     android:hint="Enter ID here" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="55dp" />
+                android:layout_height="45dp" />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Submit" />
 
         </LinearLayout>
