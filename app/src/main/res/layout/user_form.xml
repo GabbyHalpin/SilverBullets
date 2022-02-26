@@ -14,10 +14,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_weight="1"
             android:fillViewport="true"
-            android:scrollbars="vertical"
-            android:layout_weight="1">
+            android:orientation="vertical"
+            android:scrollbars="vertical">
 
             <Space
                 android:layout_width="match_parent"
@@ -34,17 +34,41 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <RadioButton android:id="@+id/radio_pirates"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/KM"
-                    android:onClick="onRadioButtonClicked"/>
 
-                <RadioButton android:id="@+id/radio_ninjas"
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayout">
+
+                    <RadioButton
+                        android:id="@+id/radio_pirates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/KM"
+                        android:textAlignment="center"
+                        tools:layout_conversion_absoluteHeight="48dp"
+                        tools:layout_conversion_absoluteWidth="100dp"
+                        tools:layout_editor_absoluteX="1dp"
+                        tools:layout_editor_absoluteY="75dp" />
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_ninjas"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:onClick="onRadioButtonClicked"
                     android:text="@string/Miles"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:textAlignment="center"
+                    tools:layout_conversion_absoluteHeight="48dp"
+                    tools:layout_conversion_absoluteWidth="100dp"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="75dp" />
 
             </RadioGroup>
 
@@ -67,6 +91,38 @@
                     android:layout_height="wrap_content"
                     android:hint="hint" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+            
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
