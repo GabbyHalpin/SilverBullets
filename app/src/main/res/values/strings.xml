@@ -6,4 +6,11 @@
     <string name="KM">Km</string>
     <string name="Miles">Miles</string>
     <string name="leaf">leaf</string>
+    <string name="submit">Submit</string>
+    <string name="distance_unit">Distance Unit</string>
+    <string name="distance_travelled">Distance Travelled</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="km">Km</string>
+    <string name="miles">Miles</string>
+    <string name="enter_distance_here">Enter distance here</string>
 </resources>

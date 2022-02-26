@@ -19,7 +19,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:fillViewport="true"
             android:orientation="vertical"
             android:scrollbars="vertical">
@@ -34,7 +33,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="20sp"
-                android:text="Distance Unit" />
+                android:text="@string/distance_unit"
+                android:textColor="#00695C" />
 
 
             <ToggleButton
@@ -42,9 +42,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="ToggleButton"
-                android:textOff="Km"
-                android:textOn="Miles" />
+                android:text="@string/togglebutton"
+                android:textColor="#455A64"
+                android:textOff="@string/km"
+                android:textOn="@string/miles"
+                tools:ignore="TextContrastCheck" />
 
             <Space
                 android:layout_width="match_parent"
@@ -56,7 +58,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="20sp"
-                android:text="Distance Travelled" />
+                android:text="@string/distance_travelled"
+                android:textColor="#00695C" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -66,30 +69,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20sp"
-                    android:hint="Enter distance here" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="45dp" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="20sp"
-                android:text="Vehicle Model ID" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20sp"
-                    android:hint="Enter ID here" />
+                    android:hint="@string/enter_distance_here"
+                    android:hintTextColor="#616161"
+                    android:textColor="#616161"
+                    android:textColorHighlight="#616161"
+                    android:textColorHint="#616161"
+                    android:textColorLink="#616161"
+                    tools:ignore="TextContrastCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -102,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Submit" />
+                android:text="@string/submit" />
 
         </LinearLayout>
     </ScrollView>
