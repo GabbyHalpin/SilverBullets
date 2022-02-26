@@ -56,6 +56,7 @@
                 android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:background="@color/purple_500"
+                android:backgroundTintMode="add"
                 android:dropDownWidth="match_parent"
                 android:dropDownSelector="@android:drawable/btn_dropdown" />
 
@@ -113,17 +114,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20sp"
-                    android:hint="@string/enter_distance_here"
-                    android:hintTextColor="#616161"
-                    android:textColor="#616161"
-                    android:textColorHighlight="#616161"
-                    android:textColorHint="#616161"
-                    android:textColorLink="#616161"
-                    tools:ignore="TextContrastCheck" />
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="20sp"-->
+<!--                    android:hint="@string/enter_distance_here"-->
+<!--                    android:hintTextColor="#616161"-->
+<!--                    android:textColor="#616161"-->
+<!--                    android:textColorHighlight="#616161"-->
+<!--                    android:textColorHint="#616161"-->
+<!--                    android:textColorLink="#616161"-->
+<!--                    tools:ignore="TextContrastCheck" />-->
             </com.google.android.material.textfield.TextInputLayout>
 
 
