@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Carbon Footprint Calculator</string>
+    <string name="emmissions">Emmissions</string>
+    <string name="take_the_quiz">Take the Quiz</string>
+    <string name="your_current_emmissions">Your Current Emmissions:</string>
+    <string name="KM">Km</string>
+    <string name="Miles">Miles</string>
 </resources>
