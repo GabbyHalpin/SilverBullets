@@ -12,7 +12,7 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:background="#731B1B"
-        android:backgroundTint="#6812DDAE"
+        android:backgroundTint="#D763E8A9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -32,11 +32,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="TextView" />
+                android:text="Brand" />
 
             <Spinner
                 android:id="@+id/spinner"
-                android:layout_width="match_parent"
+                android:layout_width="351dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:background="@color/white"
@@ -48,14 +48,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="TextView" />
+                android:text="Model" />
 
             <Spinner
                 android:id="@+id/spinner2"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
                 android:layout_gravity="center"
-                android:background="@color/purple_500"
+                android:background="@color/white"
                 android:backgroundTintMode="add"
                 android:dropDownWidth="match_parent"
                 android:dropDownSelector="@android:drawable/btn_dropdown" />
@@ -65,14 +65,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="TextView" />
+                android:text="Year" />
 
             <Spinner
                 android:id="@+id/spinner3"
-                android:layout_width="match_parent"
+                android:layout_width="346dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
-                android:background="@color/teal_200"
+                android:background="@color/white"
                 android:dropDownWidth="match_parent"
                 android:dropDownSelector="@android:drawable/arrow_down_float" />
 
