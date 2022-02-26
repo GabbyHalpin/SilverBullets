@@ -13,4 +13,8 @@
     <string name="km">Km</string>
     <string name="miles">Miles</string>
     <string name="enter_distance_here">Enter distance here</string>
+    <string name="bottomleaf">Leaf</string>
+    <string name="toprightleaf">Leaf</string>
+    <string name="bottomrightleaf">Leaf</string>
+    <string name="topleftleaf">Leaf</string>
 </resources>

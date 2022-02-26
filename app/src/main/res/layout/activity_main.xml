@@ -42,6 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/emmissions"
+        android:textColor="#00695C"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -54,11 +55,13 @@
         android:layout_width="146dp"
         android:layout_height="163dp"
         android:layout_marginEnd="64dp"
+        android:contentDescription="@string/topleftleaf"
         android:rotationX="191"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/leaf" />
+        app:srcCompat="@drawable/leaf"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -66,11 +69,13 @@
         android:layout_height="192dp"
         android:layout_marginStart="228dp"
         android:layout_marginBottom="4dp"
+        android:contentDescription="@string/toprightleaf"
         android:rotationX="191"
         android:rotationY="190"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:srcCompat="@drawable/leaf" />
+        app:srcCompat="@drawable/leaf"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -78,21 +83,25 @@
         android:layout_height="192dp"
         android:layout_marginStart="140dp"
         android:layout_marginTop="68dp"
+        android:contentDescription="@string/bottomrightleaf"
         android:rotationX="17"
         android:rotationY="190"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/leaf" />
+        app:srcCompat="@drawable/leaf"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="146dp"
         android:layout_height="192dp"
         android:layout_marginTop="72dp"
+        android:contentDescription="@string/bottomleaf"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button"
-        app:srcCompat="@drawable/leaf" />
+        app:srcCompat="@drawable/leaf"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
