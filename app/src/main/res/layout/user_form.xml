@@ -42,6 +42,7 @@
                 android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:background="@color/white"
+                android:dropDownWidth="match_parent"
                 android:dropDownSelector="@android:drawable/arrow_down_float"
                 android:visibility="visible" />
 
@@ -147,4 +148,5 @@
 
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
